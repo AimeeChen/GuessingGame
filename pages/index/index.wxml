@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 1.你已经获胜X次 -->
+  <view>
+    <text>你已经获胜了</text><text style="color:red">{{winNum}}</text><text>次</text>
+  </view>
+
+  <!-- 2.Ai和用户猜拳结果展示 -->
+  <view class='showView'>
+    <image class="guestureImg" src="{{imgAi}}"></image>
+    <text>{{resultDescription}}</text>
+    <image class="guestureImg" src="{{imgUser}}"></image>
+  </view>
+
+  <view class='userView'>
+    <!-- 3.用户出拳 -->
+    <text>出拳吧，少年~</text>
+    <view class='showView'>
+      <block wx:for="{{srcs}}" wx:key="user">
+        <image class='guestureImg' src="{{item}}" bindtap='changeForChoose' id='{{index}}'></image>
+      </block>
+    </view>
+
+    <!-- 4.再来一次 -->
+    <button class='userAgain' bindtap='again'>再来一次</button>
+  </view>
+</view>

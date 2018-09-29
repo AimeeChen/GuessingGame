@@ -1,0 +1,30 @@
+/**index.wxss**/
+
+.showView {
+  width: 100%;
+  display:flex;
+  justify-content:space-around;
+  margin: 30rpx;
+}
+
+/* 展示出拳结果 */
+.guestureImg {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.userView {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background: white;
+  padding: 30rpx;
+}
+
+.userAgain {
+  width: 80%;
+  background: #ffdf33;
+  margin-top: 20rpx;
+}
